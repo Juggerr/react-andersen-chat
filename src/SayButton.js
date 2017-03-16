@@ -1,17 +1,18 @@
 import React, { Component , PropTypes } from 'react';
 import { Button } from 'react-bootstrap';
 
-
-class HelloButton extends Component {
+class SayButton extends Component {
     constructor(props){
         super(props);
     }
 
     render() {
+        const { word } = this.props;
+
         return (
-            <Button onClick={() => alert('Hello!')}>Say Hello</Button>
+            <Button bsStyle="success" onClick={() => alert(word)}>Say {word}</Button>
         )
     }
 }
 
-export default HelloButton;
+export default SayButton;

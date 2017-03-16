@@ -1,9 +1,11 @@
 import React from 'react';
+import { PageHeader } from 'react-bootstrap';
+
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <h1 className="hello-label">Hello, world!</h1>
+    <div style={{margin: '0 auto', width: '700px'}}>
+      <PageHeader className="chat-label">The Chat</PageHeader>
       {children}
     </div>
   );
